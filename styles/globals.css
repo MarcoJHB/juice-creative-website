@@ -1,9 +1,18 @@
+@import url('clash-display.css');
+
+:root {
+  --bg-color-light: #f7f8f4;
+  --bg-color-dark: #101828;
+  --bg-gradient: linear-gradient(114.4deg, #dfac35 7.11%, rgba(227, 26, 173, 0.51) 100.51%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: black;
 }
 
 a {
@@ -15,12 +24,170 @@ a {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: 'ClashDisplay-Variable';
+}
+
+.primary-heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.secondary-heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.body-text {
+  font-weight: 500;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background: rgb(41, 41, 41);
   }
+}
+
+/* App */
+
+.app-container {
+  background-color: #101828;
+}
+
+/* NavBar */
+
+nav.nav-container {
+  background-color: aqua;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  align-items: center;
+}
+
+nav a {
+  padding: 1rem 1rem;
+  background-color: #48143a;
+  color: #fff;
+}
+
+/* Home Page */
+
+/* Hero Section  */
+
+.hero-container {
+  background-color: var(--bg-color-light);
+  color: black;
+  padding: 4% 0% 4% 15%;
+
+  height: 90vh;
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+
+/* Team Section  */
+
+.team-container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4% 0% 4% 15%;
+  background-color: var(--bg-color-light);
+}
+
+.team-title {
+  font-size: 2rem;
+}
+
+.team-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  width: 80%;
+}
+
+.team-picture {
+  display: flex;
+  gap: 1rem;
+}
+
+.team-left .team-picture:nth-child(2) {
+  padding-left: 12%;
+}
+
+.team-cta {
+  padding-top: 40%;
+}
+
+/* Big Text Container  */
+
+.big-text-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10% 0% 4% 15%;
+  background-color: var(--bg-color-dark);
+}
+
+.big-text-container .primary-heading {
+  max-width: 50%;
+}
+
+.bottom-text {
+  padding-top: 10%;
+  max-width: 20rem;
+}
+
+/* Team Quote Section */
+
+.team-quote-container {
+  color: black;
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 10% 0% 4% 15%;
+  background: var(--bg-gradient);
+}
+
+.team-quote-container .team-picture {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-quote-container .body-text {
+  max-width: 20%;
+}
+
+.team-quote-container .team-picture {
+  margin: 0;
+}
+
+/* Case Studies */
+
+.case-study-container {
+  color: white;
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 10% 0% 4% 15%;
+  background-color: var(--bg-color-dark);
 }
