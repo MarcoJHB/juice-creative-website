@@ -185,9 +185,53 @@ nav a {
 .case-study-container {
   color: white;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  height: 100%;
   align-items: flex-start;
   gap: 2rem;
-  padding: 10% 0% 4% 15%;
+  padding: 10% 4% 4% 15%;
   background-color: var(--bg-color-dark);
+}
+
+.accordion {
+  width: 500px;
+}
+
+.item {
+  background: #dfac35;
+  margin-bottom: 5px;
+  padding: 1%;
+}
+
+.accordion-block {
+  width: 100%;
+  margin-bottom: 15px;
+  line-height: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.accordion-button {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  gap: 30%;
+}
+
+.inner-accordion {
+  display: flex;
+  gap: 10%;
+}
+
+.client-content{
+  width: 30%;
+}
+
+.client-video {
+  width: 100%;
 }
