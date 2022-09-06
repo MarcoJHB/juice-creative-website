@@ -228,10 +228,76 @@ nav a {
   gap: 10%;
 }
 
-.client-content{
+.client-content {
   width: 30%;
 }
 
 .client-video {
   width: 100%;
+}
+
+/* CTA Section */
+
+.cta-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 10% 4% 4% 15%;
+  background-image: url('/jc-frontend/public/images/cta-pineapple-glasses.jpg');
+  background-color: #dfac35;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Services Container */
+
+.services-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 10% 4% 14% 15%;
+  background-color: var(--bg-color-dark);
+}
+
+.grid-container {
+  display: flex;
+  width: 100%;
+
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.services-grid {
+  width: 80%;
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15%;
+}
+
+/* Footer Section */
+
+.footer-container {
+  color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 10% 4% 4% 15%;
+  background-color: var(--bg-color-dark);
+}
+
+.footer-top {
+  display: flex;
+  gap: 15rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
 }
